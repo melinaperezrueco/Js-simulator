@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Prestamos Easy Way">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.23/dist/sweetalert2.all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.23/dist/sweetalert2.all.min.js"></script>
+    <title> Prestamos Easy Way - Home </title>
+</head>
+
+<body>
+    <header>
+        <div class="h12" >
+            <img src="./money.jpg" alt="imagen">
+            <h1> Préstamos Easy Way </h1>
+            <h2> Tu préstamo online fácil </h2>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <div id="clima" >
+
+        </div>
+        
+    <fieldset>
+        <legend>Si ya te registraste inicia sesión y disfruta de unicos beneficios</legend>
+        <br>
+        <label for=""> Ingresá tu DNI</label>
+        <br>
+        <br>
+        <input type="Text" id="numero_dni" placeholder="ingresá tu DNI">
+        <br>
+        <div id="mensaje">
+        </div>
+        <br>
+        <button onclick="validar()"> Ingresar </button>
+        <br>
+        </fieldset>
+
+        <br>
+        <br>
+
+            <fieldset>
+        <legend>Si no estas registrado por favor ingresa los siguientes datos</legend>
+            <br>
+            <br>
+            <label for="">Ingresa tu edad</label>
+            <br>
+            <br>
+            <input type="number" id="age" placeholder="ingresá tu edad">
+            <button id="edd" onclick="mayoria()"> Comprobar edad </button>
+            <br>
+            <br>
+            <label for="">Ingresa tu nombre</label>
+            <br>
+            <br>
+            <input type="text" id="name" placeholder="ingresá tu nombre" disabled>
+            <br>
+            <br>
+            <label for="">Ingresa tu apellido</label>
+            <br>
+            <br>
+            <input type="text" id="last_name" placeholder="ingresá tu apellido" disabled>
+            <br>
+            <br>
+            <label for="">Ingresa tu DNI</label>
+            <br>
+            <br>
+            <input type="number" id="dni" placeholder="ingresá tu DNI" disabled>
+            <br>
+            <br>
+            <button id="register" onclick="registrarse()">Registrame</button>
+            <br>
+            <br>
+            <div id="desestructurado">
+
+            </div>
+            <br>
+            <label for="">Ingresá el monto del préstamo a pedir en números </label>
+            <br>
+            <br>
+            <input type="number" id="money" placeholder="ingresá el monto en números" disabled>
+            <br>
+            <br>
+
+            <select name="" id="cuotas">
+                <option>Seleccioná una opción</option>
+                <option value="6"> 6 </option>
+                <option value="12"> 12 </option>
+                <option value="18"> 18 </option>
+                <option value="24"> 24 </option>
+            </select>
+            <p id="cuotas-seleccionada">
+                
+            </p>
+            <br>
+            <button onclick="send()"> Enviar pedido de préstamo</button>
+            <br>
+            <br>
+            <p id="parrafo">
+
+            </p>
+            <br>
+            <button onclick="limpiarPrestamo()">Limpiar préstamo</button>
+            <div>
+            <br>
+            <br>
+        </fieldset>
+
+
+
+
+
+    <footer>
+        <section>
+            <div class="sectionmain"> Easy Way Préstamos S.A.</div>
+            <div class="sectionmain">Copyright 2022</div>
+        </section>
+    </footer>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

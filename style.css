@@ -1,0 +1,67 @@
+
+.h12{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        color: rgb(66, 66, 159);
+        text-align: center;
+
+}
+
+h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+}
+
+h2 {
+        font-family: 'Alice', serif;
+        font-size: 30px;
+
+}
+
+#clima{
+        text-align: center;
+        align-items: center;
+        padding-bottom: 20px;
+        color: rgb(100, 99, 142);
+        border-top-style: solid;
+        border-bottom-style: solid;
+        height: 10px ;
+        margin-bottom: 30px;
+        font-family: 'Playfair Display', serif;
+}
+
+fieldset {
+        display: inline-block;
+}
+
+
+legend{
+        font-family: 'Playfair Display', serif;
+}
+
+label {
+        font-family: 'Alice', serif;
+}
+main {
+        text-align: center;
+}
+
+select{
+        font-family: 'Alice', serif;
+}
+
+
+button {
+        font-family: 'Alice', serif;
+        border-radius: 5px;
+        background-color: rgb(180, 180, 199);
+}
+
+footer {
+        padding-top: 30px;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+}
