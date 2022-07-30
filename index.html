@@ -32,68 +32,47 @@
         <div id="clima" >
 
         </div>
-        
+    
+    <div id="cuerpo">
     <fieldset>
         <legend>Si ya te registraste inicia sesión y disfruta de unicos beneficios</legend>
-        <br>
+        <div>
         <label for=""> Ingresá tu DNI</label>
-        <br>
-        <br>
+        </div>
+        <div>
         <input type="Text" id="numero_dni" placeholder="ingresá tu DNI">
-        <br>
+        </div>
         <div id="mensaje">
         </div>
-        <br>
         <button onclick="validar()"> Ingresar </button>
-        <br>
         </fieldset>
 
-        <br>
-        <br>
 
-            <fieldset>
+        <fieldset>
         <legend>Si no estas registrado por favor ingresa los siguientes datos</legend>
-            <br>
-            <br>
+            <div>
             <label for="">Ingresa tu edad</label>
-            <br>
-            <br>
             <input type="number" id="age" placeholder="ingresá tu edad">
             <button id="edd" onclick="mayoria()"> Comprobar edad </button>
-            <br>
-            <br>
-            <label for="">Ingresa tu nombre</label>
-            <br>
-            <br>
-            <input type="text" id="name" placeholder="ingresá tu nombre" disabled>
-            <br>
-            <br>
-            <label for="">Ingresa tu apellido</label>
-            <br>
-            <br>
-            <input type="text" id="last_name" placeholder="ingresá tu apellido" disabled>
-            <br>
-            <br>
-            <label for="">Ingresa tu DNI</label>
-            <br>
-            <br>
-            <input type="number" id="dni" placeholder="ingresá tu DNI" disabled>
-            <br>
-            <br>
-            <button id="register" onclick="registrarse()">Registrame</button>
-            <br>
-            <br>
-            <div id="desestructurado">
-
             </div>
-            <br>
+            <div>
+            <label for="">Ingresa tu nombre</label>
+            <input type="text" id="name" placeholder="ingresá tu nombre" disabled>
+            </div>
+            <div>
+            <label for="">Ingresa tu apellido</label>
+            <input type="text" id="last_name" placeholder="ingresá tu apellido" disabled>
+            </div>
+            <div>
+            <label for="">Ingresa tu DNI</label>
+            <input type="number" id="dni" placeholder="ingresá tu DNI" disabled>
+            <button id="register" onclick="registrarse()">Registrame</button>
+            </div>
+            <div id="desestructurado">
+            </div>
             <label for="">Ingresá el monto del préstamo a pedir en números </label>
-            <br>
-            <br>
             <input type="number" id="money" placeholder="ingresá el monto en números" disabled>
-            <br>
-            <br>
-
+            <div>
             <select name="" id="cuotas">
                 <option>Seleccioná una opción</option>
                 <option value="6"> 6 </option>
@@ -101,23 +80,20 @@
                 <option value="18"> 18 </option>
                 <option value="24"> 24 </option>
             </select>
-            <p id="cuotas-seleccionada">
-                
+            </div>
+
+            <p id="cuotas-seleccionada">  
             </p>
-            <br>
+
             <button id="solicitar" onclick="send()"> Solicitar </button>
-            <br>
-            <br>
             <p id="parrafo">
-
             </p>
-            <br>
-            <button onclick="limpiarPrestamo()">Limpiar préstamo</button>
             <div>
-            <br>
-            <br>
+            <button onclick="limpiarPrestamo()">Limpiar préstamo</button>
+            </div>
+            <div>
         </fieldset>
-
+    </div>
 
 
 

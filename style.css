@@ -1,4 +1,8 @@
 
+header {
+        height: auto;
+}
+
 
 .h12{
         padding-top: 30px;
@@ -28,10 +32,15 @@ h2 {
 }
 
 
-body {
+#cuerpo {
+        display: flex;
+        flex-direction: column;
         font-size: 17px;
 }
 
+div{
+        margin: 10px;
+}
 
 #clima{
         text-align: center;
@@ -47,6 +56,7 @@ body {
 }
 
 fieldset {
+        margin-top: 30px;
         display: inline-block;
 }
 
