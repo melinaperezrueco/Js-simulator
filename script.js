@@ -68,8 +68,8 @@ function obtenerDatos() {
 function mayoria() {
 
     const Style = {
-        background: 'green',
-        fontFamily: 'Verdana',
+        background: 'rgb(225, 61, 225)',
+        fontFamily: 'Alice',
         color: 'white',
         fontSize: '15px',
     }
@@ -138,7 +138,7 @@ function send() {
     let prestamo = ((cuotas / 12) * 0.5 * monto + monto) / cuotas;
 
     let msj = `Gracias por elegirnos, de aprobarse deberás devolver un total de: <strong> $${prestamo * cuotas
-        } </strong>, en <strong>${cuotas}</strong> de <strong>$${prestamo}</strong>.`;
+        } </strong>, en <strong>${cuotas}</strong> cuotas de <strong>$${prestamo}</strong>.`;
 
     document.getElementById("parrafo").innerHTML = msj;
 
