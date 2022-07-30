@@ -11,19 +11,20 @@ function validar() {
         parrafo.innerText = "Bienvenido al Prestamos Easy Way, comunicate al 0800-111-0000 y reclamá un regalo especial";
         mensaje.append(parrafo);
     } else {
-        document.body.innerHTML = `<h2> Usuario no registrado. Por favor recarga la página y registrate </h2>
-                            <p> Usuario no encontrado: ${dni.value}</p>
+        document.body.innerHTML = `<h2> Usuario no registrado. Por favor recarga la página y registrate. </h2>
+                            <p> Usuario con DNI ${dni.value} no encontrado </p>
                             `;
     }
 }
 
 
 class Cliente {
-    constructor(nombre, apellido, dni, edad) {
+    constructor(nombre, apellido, dni, edad, telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.edad = edad;
+        this.telefono = telefono;
     }
 }
 
@@ -52,6 +53,7 @@ function obtenerDatos() {
         apellido: document.getElementById("last_name").value,
         dni: document.getElementById("dni").value,
         edad: document.getElementById("age").value,
+        telefono: document.getElementById("telef").value,
     };
 
     return datosCliente;
@@ -88,6 +90,7 @@ function mayoria() {
         document.getElementById("last_name").removeAttribute('disabled');
         document.getElementById("dni").removeAttribute('disabled');
         document.getElementById("money").removeAttribute('disabled');
+        document.getElementById("telef").removeAttribute('disabled');
     } else {
         Swal.fire({
             title: 'Error!',
@@ -111,7 +114,8 @@ function registrarse() {
         datos.nombre,
         datos.apellido,
         datos.dni,
-        datos.edad
+        datos.edad,
+        datos.telefono,
     );
 
     lista_clientes.push(new_client);
@@ -120,7 +124,7 @@ function registrarse() {
 
     //Desestructuración
 
-    let {nombre, apellido, dni, edad} = new_client;
+    let {nombre, apellido, dni, edad, telefono} = new_client;
     let msj_reg = `Gracias por registrarte <strong>${nombre}</strong>`;
     document.getElementById("desestructurado").innerHTML = msj_reg;
 
@@ -134,11 +138,12 @@ function registrarse() {
 function send() {
     let monto = parseInt(document.getElementById("money").value);
     let cuotas = parseInt(document.getElementById("cuotas").value);
+    let telefonos = parseInt(document.getElementById("telef").value);
 
     let prestamo = ((cuotas / 12) * 0.5 * monto + monto) / cuotas;
 
     let msj = `Gracias por elegirnos, de aprobarse deberás devolver un total de: <strong> $${prestamo * cuotas
-        } </strong>, en <strong>${cuotas}</strong> cuotas de <strong>$${prestamo}</strong>.`;
+        }</strong>, en <strong>${cuotas}</strong> cuotas de <strong>$${prestamo}</strong>. Nos comunicaremos con vos a la brevedad al número: ${telefonos}.`;
 
     document.getElementById("parrafo").innerHTML = msj;
 
